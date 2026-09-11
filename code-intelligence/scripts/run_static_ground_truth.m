@@ -10,6 +10,7 @@ cases = {'tandem_baseline_r2','tandem_f40a3_phi0_r2'};
 summary = struct('schema_version','p1-native-static-1','matlab_version',version, ...
     'matlab_release',version('-release'),'repository_commit',getenv('GITHUB_SHA'), ...
     'cases',struct('name',{},'status',{},'output_dir',{}));
+fprintf('Native static ground truth: MATLAB %s %s\n', version, version('-release'));
 for k = 1:numel(cases)
     caseRoot = fullfile(repoRoot,'cases','per_case',cases{k});
     caseOut = fullfile(outputRoot,cases{k});
@@ -17,14 +18,26 @@ for k = 1:numel(cases)
     try
         out = collect_static_evidence(caseRoot, caseOut);
         status = 'COMPLETE_WITH_LIMITATIONS';
+        summaryFile = fullfile(out,'execution_summary.json');
+        if isfile(summaryFile)
+            detail = jsondecode(fileread(summaryFile));
+            fprintf('CASE %s: status=%s analyzed_files=%d failed_files=%d source_unchanged=%d\n', ...
+                cases{k}, detail.status, detail.analyzed_file_count, detail.failed_file_count, detail.source_unchanged);
+        else
+            fprintf('CASE %s: status=%s (summary missing)\n', cases{k}, status);
+        end
     catch ME
         out = caseOut;
         status = 'FAILED_OR_PARTIAL';
         fid=fopen(fullfile(caseOut,'runner_failure.txt'),'w');
         if fid>=0, fprintf(fid,'%s\n',getReport(ME,'extended','hyperlinks','off')); fclose(fid); end
+        fprintf('CASE %s: status=%s error=%s\n', cases{k}, status, ME.message);
     end
     summary.cases(k)=struct('name',cases{k},'status',status,'output_dir',out); %#ok<AGROW>
 end
+products = ver;
+fprintf('Installed MathWorks products (%d):\n', numel(products));
+for k = 1:numel(products), fprintf('  %s\n', products(k).Name); end
 fid=fopen(fullfile(outputRoot,'static_run_summary.json'),'w');
 if fid<0, error('PIVCI:Write','Cannot write static run summary.'); end
 cleanup=onCleanup(@() fclose(fid)); %#ok<NASGU>
