@@ -23,9 +23,10 @@ for k = 1:numel(cases)
             detail = jsondecode(fileread(summaryFile));
             fprintf('CASE %s: status=%s analyzed_files=%d failed_files=%d source_unchanged=%d\n', ...
                 cases{k}, detail.status, detail.analyzed_file_count, detail.failed_file_count, detail.source_unchanged);
-        else
-            fprintf('CASE %s: status=%s (summary missing)\n', cases{k}, status);
         end
+        productNames = required_product_names(fullfile(out,'static_native.mat'));
+        fprintf('CASE %s native required products (%d):\n', cases{k}, numel(productNames));
+        for j=1:numel(productNames), fprintf('  %s\n', productNames{j}); end
     catch ME
         out = caseOut;
         status = 'FAILED_OR_PARTIAL';
@@ -42,4 +43,28 @@ fid=fopen(fullfile(outputRoot,'static_run_summary.json'),'w');
 if fid<0, error('PIVCI:Write','Cannot write static run summary.'); end
 cleanup=onCleanup(@() fclose(fid)); %#ok<NASGU>
 fprintf(fid,'%s\n',jsonencode(summary,'PrettyPrint',true));
+end
+
+function names = required_product_names(matFile)
+names = {};
+if ~isfile(matFile), return; end
+loaded = load(matFile,'raw');
+if ~isfield(loaded,'raw'), return; end
+raw = loaded.raw;
+for i=1:numel(raw)
+    p = raw(i).recursive_products;
+    if isempty(p), continue; end
+    if isstruct(p)
+        for j=1:numel(p)
+            if isfield(p,'Name'), n=char(p(j).Name); else, n=char(p(j)); end
+            if ~any(strcmp(names,n)), names{end+1}=n; end %#ok<AGROW>
+        end
+    elseif iscell(p)
+        for j=1:numel(p)
+            n=char(p{j});
+            if ~any(strcmp(names,n)), names{end+1}=n; end %#ok<AGROW>
+        end
+    end
+end
+names = sort(names);
 end
