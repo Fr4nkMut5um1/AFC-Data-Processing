@@ -1,0 +1,519 @@
+{
+  "source_scripts": {
+    "baseline": {
+      "file": "project/cases/per_case/tandem_baseline_r2/tandem_baseline_r2_case.m",
+      "sha256": "f170dc25ddffb13ff1c42cbc7e4be8cd5d89e40a622266c2b21d94fad48fe04f",
+      "sources_recorded": {
+        "raw": {
+          "roots": [
+            "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_Baseline_PIV_3rd",
+            "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_Baseline_PIV_2nd"
+          ],
+          "offsets": [
+            0,
+            0
+          ],
+          "ids": [
+            "Tandem_Baseline_PIV_3rd",
+            "Tandem_Baseline_PIV_2nd"
+          ]
+        },
+        "postproc": {
+          "roots": [
+            "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_Baseline_PostProc_3rd",
+            "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_Baseline_PostProc_2nd"
+          ],
+          "offsets": [
+            0,
+            0
+          ],
+          "ids": [
+            "Tandem_Baseline_PostProc_3rd",
+            "Tandem_Baseline_PostProc_2nd"
+          ]
+        }
+      }
+    },
+    "controlled": {
+      "file": "project/cases/per_case/tandem_f40a3_phi0_r2/tandem_f40a3_phi0_r2_case.m",
+      "sha256": "b9ce0fcca105778967c04ee4866550a79235d64c9552732de758c37b3a5e8c7c",
+      "sources_recorded": {
+        "raw": {
+          "roots": [
+            "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_f40A3_Phi+0_PIV_3rd",
+            "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_f40A3_Phi+0_PIV_2nd"
+          ],
+          "offsets": [
+            0,
+            0
+          ],
+          "ids": [
+            "Tandem_f40A3_Phi+0_PIV_3rd",
+            "Tandem_f40A3_Phi+0_PIV_2nd"
+          ]
+        },
+        "postproc": {
+          "roots": [
+            "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_f40A3_Phi+0_PostProc_3rd",
+            "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_f40A3_Phi+0_PostProc_2nd"
+          ],
+          "offsets": [
+            0,
+            0
+          ],
+          "ids": [
+            "Tandem_f40A3_Phi+0_PostProc_3rd",
+            "Tandem_f40A3_Phi+0_PostProc_2nd"
+          ]
+        }
+      }
+    }
+  },
+  "saved_result_identities": {
+    "baseline": {
+      "included_reference_fields": [
+        "section2_statistics",
+        "section2_bl_meta",
+        "section2_bl"
+      ],
+      "section2_statistics_meta": {
+        "schema_version": 1,
+        "case_id": "per_case/tandem_baseline_r2",
+        "stage": "statistics",
+        "data_root": "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_Baseline_PIV_3rd",
+        "n_frames": 6000,
+        "total_frames": 12000,
+        "grid_size": [
+          640,
+          91
+        ],
+        "fs": 960,
+        "created_utc": "2026-08-23T06:15:38Z"
+      },
+      "section2_bl_meta": {
+        "schema_version": 1,
+        "case_id": "per_case/tandem_baseline_r2",
+        "stage": "mean_bl",
+        "data_root": "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_Baseline_PIV_3rd",
+        "n_frames": 6000,
+        "total_frames": 12000,
+        "grid_size": [
+          640,
+          91
+        ],
+        "fs": 960,
+        "created_utc": "2026-08-27T09:48:02Z"
+      },
+      "saved_bl_profile_params": [
+        240,
+        320
+      ],
+      "saved_bl_u_tau": 0.9215664075592964,
+      "saved_bl_cf": 0.0027039999999999994,
+      "section4": {
+        "case_id": "per_case/tandem_baseline_r2",
+        "created_utc": "2026-08-30T12:36:08.463Z",
+        "source": {
+          "cache_file": "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\mat\\01_sequence_cache_postproc.mat",
+          "source_fingerprint": "68799bac1ce49c45a022416983093adad8ce72c0b9cb2f1e62d06e6f2c21680f",
+          "utau_file": "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\mat\\02_mean_boundary_layer_friction.mat",
+          "utau_result_created_utc": "2026-08-27T09:48:02Z"
+        },
+        "included_files": {
+          "png": 4,
+          "fig": 0,
+          "csv": 3,
+          "mat": 0
+        }
+      },
+      "section5": {
+        "case_id": "per_case/tandem_baseline_r2",
+        "source_role": "raw",
+        "created_utc": "2026-09-06T13:15:56Z",
+        "provenance": {
+          "schema_version": 2,
+          "cache_file": "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\mat\\01_sequence_cache.mat",
+          "cache_bytes": 4494909373.0,
+          "cache_modified_datenum": 740217.7581597222,
+          "cache_meta": {
+            "schema_version": 4,
+            "case_id": "per_case/tandem_baseline_r2",
+            "data_root": "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_Baseline_PIV_3rd",
+            "repeat_ids": [
+              "Tandem_Baseline_PIV_3rd",
+              "Tandem_Baseline_PIV_2nd"
+            ],
+            "repeat_roots": [
+              "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_Baseline_PIV_3rd",
+              "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_Baseline_PIV_2nd"
+            ],
+            "repeat_offsets": [
+              0,
+              0
+            ],
+            "repeat_boundaries": 6000,
+            "source_role": "raw",
+            "source_root": "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_Baseline_PIV_3rd",
+            "wall_side": "top",
+            "grid_size": [
+              640,
+              91
+            ],
+            "cached_size": [
+              12000,
+              89,
+              640
+            ],
+            "n_frames": 6000,
+            "total_frames": 12000,
+            "frame_offset": 0,
+            "source_first_file": "B0001.dat",
+            "source_last_file": "B6000.dat",
+            "fs": 960,
+            "precision": "single",
+            "y_mapping": {
+              "version": 1,
+              "method": "first_retained_row_0_plus_h",
+              "equation": "y(j) = j * h_y; wall at y = 0, first retained row y = 0 + h_y",
+              "h_y_mm": 0.5152399999999995
+            },
+            "created_utc": "2026-08-23T10:11:45Z"
+          },
+          "case_type": "baseline",
+          "fs": 960,
+          "min_valid_fraction": 0.7,
+          "transport": {
+            "edge_buffer_cells": [
+              2,
+              16
+            ],
+            "source": "raw",
+            "frame_mode": "all",
+            "stress_fraction_floor": 1e-06,
+            "profile_x_range_mm": [
+              80,
+              320
+            ]
+          },
+          "friction": {
+            "enable_pressure_gradient": 0,
+            "secant_theta_source": "p_smooth",
+            "thickness_smoothing_gap_mode": "separate_segments",
+            "local_momentum_theta_source": "shared_thickness_p_smooth",
+            "rbf_epsilon_scale": 1.2,
+            "hole_thresholds": [
+              0,
+              1,
+              2
+            ],
+            "system_secant": {
+              "upstream_mode": "range_mean",
+              "upstream_range": [
+                80,
+                90
+              ],
+              "x_end": [
+                160,
+                240,
+                320
+              ]
+            },
+            "momentum": {
+              "enabled": true,
+              "Ue_pre_smooth_p": 1e-07,
+              "pre_smooth_p": 1e-07,
+              "consistency_warn_pct": 10
+            },
+            "quality": {
+              "p_grid": [
+                0,
+                0.683772233983162,
+                0.9,
+                0.9683772233983162,
+                0.99,
+                0.9968377223398316,
+                0.999,
+                0.9996837722339832,
+                0.9999,
+                0.9999683772233983,
+                0.99999
+              ],
+              "tolerance_pct": 10,
+              "x_min": 80,
+              "x_max": 328
+            }
+          },
+          "frame_mode": "all",
+          "implementation_sha256": "49f6b4e91418014bd94c30fec54b2aecb1d88a380bf27106cc1b14c247be28cd"
+        },
+        "included_files": {
+          "png": 6,
+          "fig": 0,
+          "csv": 3,
+          "mat": 0
+        }
+      }
+    },
+    "controlled": {
+      "included_reference_fields": [
+        "section2_statistics",
+        "section2_bl_meta",
+        "section2_bl",
+        "section3_meta",
+        "section3_profile_columns",
+        "section3_xmean",
+        "section3_random_global",
+        "section3_assignment"
+      ],
+      "section2_statistics_meta": {
+        "schema_version": 1,
+        "case_id": "per_case/tandem_f40a3_phi0_r2",
+        "stage": "statistics",
+        "data_root": "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_f40A3_Phi+0_PIV_3rd",
+        "n_frames": 6000,
+        "total_frames": 12000,
+        "grid_size": [
+          640,
+          91
+        ],
+        "fs": 960,
+        "created_utc": "2026-08-27T09:22:27Z"
+      },
+      "section2_bl_meta": {
+        "schema_version": 1,
+        "case_id": "per_case/tandem_f40a3_phi0_r2",
+        "stage": "mean_bl",
+        "data_root": "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_f40A3_Phi+0_PIV_3rd",
+        "n_frames": 6000,
+        "total_frames": 12000,
+        "grid_size": [
+          640,
+          91
+        ],
+        "fs": 960,
+        "created_utc": "2026-08-28T08:32:28Z"
+      },
+      "saved_bl_profile_params": [
+        80,
+        180
+      ],
+      "saved_bl_u_tau": 0.9260577042540693,
+      "saved_bl_cf": 0.002644,
+      "section3_meta": {
+        "schema_version": 1,
+        "case_id": "per_case/tandem_f40a3_phi0_r2",
+        "stage": "phase",
+        "data_root": "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_f40A3_Phi+0_PIV_3rd",
+        "n_frames": 6000,
+        "total_frames": 12000,
+        "grid_size": [
+          640,
+          91
+        ],
+        "fs": 960,
+        "created_utc": "2026-08-31T09:36:44Z"
+      },
+      "section4": {
+        "case_id": "per_case/tandem_f40a3_phi0_r2",
+        "created_utc": "2026-08-31T13:35:55.931Z",
+        "source": {
+          "cache_file": "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\mat\\01_sequence_cache_postproc.mat",
+          "source_fingerprint": "20c3c0851ef079a0577fb6d26ddd3155ea96ea10bd1b54879a9663267f53ebf1",
+          "utau_file": "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\mat\\02_mean_boundary_layer_friction.mat",
+          "utau_result_created_utc": "2026-08-28T08:32:28Z"
+        },
+        "included_files": {
+          "png": 4,
+          "fig": 0,
+          "csv": 3,
+          "mat": 0
+        }
+      },
+      "section5": {
+        "case_id": "per_case/tandem_f40a3_phi0_r2",
+        "source_role": "raw",
+        "created_utc": "2026-09-06T13:10:36Z",
+        "provenance": {
+          "schema_version": 2,
+          "cache_file": "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\mat\\01_sequence_cache.mat",
+          "cache_bytes": 4496632742.0,
+          "cache_modified_datenum": 740221.5469097223,
+          "cache_meta": {
+            "schema_version": 4,
+            "case_id": "per_case/tandem_f40a3_phi0_r2",
+            "data_root": "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_f40A3_Phi+0_PIV_3rd",
+            "repeat_ids": [
+              "Tandem_f40A3_Phi+0_PIV_3rd",
+              "Tandem_f40A3_Phi+0_PIV_2nd"
+            ],
+            "repeat_roots": [
+              "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_f40A3_Phi+0_PIV_3rd",
+              "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_f40A3_Phi+0_PIV_2nd"
+            ],
+            "repeat_offsets": [
+              0,
+              0
+            ],
+            "repeat_boundaries": 6000,
+            "source_role": "raw",
+            "source_root": "J:\\Export0731\\TempData0731_LinZheng\\Tandem\\Tandem_f40A3_Phi+0_PIV_3rd",
+            "wall_side": "top",
+            "grid_size": [
+              640,
+              91
+            ],
+            "cached_size": [
+              12000,
+              89,
+              640
+            ],
+            "n_frames": 6000,
+            "total_frames": 12000,
+            "frame_offset": 0,
+            "source_first_file": "B0001.dat",
+            "source_last_file": "B6000.dat",
+            "fs": 960,
+            "precision": "single",
+            "y_mapping": {
+              "version": 1,
+              "method": "first_retained_row_0_plus_h",
+              "equation": "y(j) = j * h_y; wall at y = 0, first retained row y = 0 + h_y",
+              "h_y_mm": 0.5152399999999995
+            },
+            "created_utc": "2026-08-27T05:07:33Z"
+          },
+          "case_type": "controlled",
+          "fs": 960,
+          "min_valid_fraction": 0.7,
+          "transport": {
+            "edge_buffer_cells": [
+              2,
+              16
+            ],
+            "source": "raw",
+            "frame_mode": "all",
+            "stress_fraction_floor": 1e-06,
+            "profile_x_range_mm": [
+              80,
+              320
+            ]
+          },
+          "friction": {
+            "enable_pressure_gradient": 0,
+            "secant_theta_source": "p_smooth",
+            "thickness_smoothing_gap_mode": "separate_segments",
+            "local_momentum_theta_source": "shared_thickness_p_smooth",
+            "rbf_epsilon_scale": 1.2,
+            "hole_thresholds": [
+              0,
+              1,
+              2
+            ],
+            "system_secant": {
+              "upstream_mode": "range_mean",
+              "upstream_range": [
+                80,
+                90
+              ],
+              "x_end": [
+                160,
+                240,
+                320
+              ]
+            },
+            "momentum": {
+              "enabled": true,
+              "Ue_pre_smooth_p": 1e-07,
+              "pre_smooth_p": 1e-07,
+              "consistency_warn_pct": 10
+            },
+            "quality": {
+              "p_grid": [
+                0,
+                0.683772233983162,
+                0.9,
+                0.9683772233983162,
+                0.99,
+                0.9968377223398316,
+                0.999,
+                0.9996837722339832,
+                0.9999,
+                0.9999683772233983,
+                0.99999
+              ],
+              "tolerance_pct": 10,
+              "x_min": 80,
+              "x_max": 328
+            }
+          },
+          "frame_mode": "all",
+          "phase": {
+            "enabled": true,
+            "f0_hz": 40,
+            "n_bins": 24,
+            "phi0_user_deg": [],
+            "minimum_samples_per_bin": 20
+          },
+          "implementation_sha256": "49f6b4e91418014bd94c30fec54b2aecb1d88a380bf27106cc1b14c247be28cd"
+        },
+        "included_files": {
+          "png": 15,
+          "fig": 0,
+          "csv": 4,
+          "mat": 0
+        }
+      }
+    }
+  },
+  "configuration_differences": [
+    {
+      "case": "baseline",
+      "field": "cfg.phase_preview.marker_stride",
+      "line": 166,
+      "current": 1,
+      "historical": 8
+    },
+    {
+      "case": "baseline",
+      "field": "cfg.structures.max_complete_ss_per_sign",
+      "line": 185,
+      "current": "Inf",
+      "historical": 1
+    },
+    {
+      "case": "baseline",
+      "field": "cfg.structures.section4.max_complete_ss_per_sign",
+      "line": 196,
+      "current": "Inf",
+      "historical": 1
+    },
+    {
+      "case": "baseline",
+      "field": "cfg.structures.section4.max_figure_objects",
+      "line": 201,
+      "current": "Inf",
+      "historical": 30
+    },
+    {
+      "case": "controlled",
+      "field": "cfg.phase_preview.marker_stride",
+      "line": 163,
+      "current": 1,
+      "historical": 2
+    },
+    {
+      "case": "controlled",
+      "field": "cfg.structures.max_complete_ss_per_sign",
+      "line": 182,
+      "current": "Inf",
+      "historical": 1
+    },
+    {
+      "case": "controlled",
+      "field": "cfg.structures.section4.max_complete_ss_per_sign",
+      "line": 193,
+      "current": "Inf",
+      "historical": 1
+    }
+  ]
+}

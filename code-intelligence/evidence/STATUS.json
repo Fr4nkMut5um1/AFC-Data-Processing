@@ -1,0 +1,14 @@
+{
+  "p0": "CURRENT_SOURCE_RECONNAISSANCE_COMPLETE",
+  "p1": "COLLECTOR_PREPARED_NATIVE_NOT_RUN",
+  "matlab_static": "NOT_RUN",
+  "runtime": "NOT_RUN",
+  "cloud_job": "NOT_STARTED",
+  "native_relationships": null,
+  "execution_access": "REPOSITORY_ACCESS_CONFIRMED_MATLAB_WORKER_UNAVAILABLE",
+  "launcher": "PREPARED_PREFLIGHT_FAILURE_PATHS_CHECKED",
+  "source_package_sha256": "192388646aceeb25e6cea55e64d5266ab2e8b482750a99a4a8df3fe1f15f7f9b",
+  "source_commit": "c860e5d2e259561147f70e0e932e0b6300bc512e",
+  "repository": "Fr4nkMut5um1/AFC-Data-Processing",
+  "repository_visibility": "private"
+}

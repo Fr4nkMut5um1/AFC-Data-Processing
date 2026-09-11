@@ -1,0 +1,33 @@
+﻿case,field,old_location_P2,unique_new_location,effective_value,consumer,user_adjustable
+tandem_baseline_r2,rebuild_cache,tandem_baseline_r2_case.m:75,cfg.stages.cache,reuse; rebuild_cache 派生 false,prepare_sequence_cache,仅 stages.cache
+tandem_baseline_r2,structures.source_mode,tandem_baseline_r2_case.m:212,cfg.structures.section4.source_mode,'pod_e50',section4_vlsm_analysis,是
+tandem_baseline_r2,structures.connectivities,tandem_baseline_r2_case.m:213,cfg.structures.section4.connectivities,[8 4],section4_vlsm_analysis,是
+tandem_baseline_r2,structures.primary_connectivity,tandem_baseline_r2_case.m:214,cfg.structures.section4.primary_connectivity,8,section4_vlsm_analysis,是
+tandem_baseline_r2,structures.length_thresholds,tandem_baseline_r2_case.m:215,cfg.structures.section4.length_thresholds,[3 3.8 4.5],section4_vlsm_analysis,是
+tandem_baseline_r2,structures.max_complete_ss_per_sign,tandem_baseline_r2_case.m:216,cfg.structures.section4.max_complete_ss_per_sign,Inf,section4_vlsm_analysis,是
+tandem_baseline_r2,structures.plot_normalization,tandem_baseline_r2_case.m:218,cfg.structures.section4.plot_normalization,'u_over_Uinf',section4_vlsm_analysis,是
+tandem_baseline_r2,structures.plot_colormap,tandem_baseline_r2_case.m:217,cfg.structures.section4.plot_colormap,固定 balance / 257; 字段 ocean 无效,section4_vlsm_analysis,否
+tandem_baseline_r2,phase_preview.profile_source,tandem_baseline_r2_case.m:202,固定历史相位链；无可调入口,raw 字段无消费者,无,否
+tandem_baseline_r2,transport.stress_fraction_floor,lib/+tblR2/quadrant_streaming.m:18,cfg.transport.stress_fraction_floor,1e-6,quadrant_streaming,是
+tandem_f40a3_phi0_r2,rebuild_cache,tandem_f40a3_phi0_r2_case.m:74,cfg.stages.cache,reuse; rebuild_cache 派生 false,prepare_sequence_cache,仅 stages.cache
+tandem_f40a3_phi0_r2,structures.source_mode,tandem_f40a3_phi0_r2_case.m:209,cfg.structures.section4.source_mode,'pod_e50',section4_vlsm_analysis,是
+tandem_f40a3_phi0_r2,structures.connectivities,tandem_f40a3_phi0_r2_case.m:210,cfg.structures.section4.connectivities,[8 4],section4_vlsm_analysis,是
+tandem_f40a3_phi0_r2,structures.primary_connectivity,tandem_f40a3_phi0_r2_case.m:211,cfg.structures.section4.primary_connectivity,8,section4_vlsm_analysis,是
+tandem_f40a3_phi0_r2,structures.length_thresholds,tandem_f40a3_phi0_r2_case.m:212,cfg.structures.section4.length_thresholds,[3 3.8 4.5],section4_vlsm_analysis,是
+tandem_f40a3_phi0_r2,structures.max_complete_ss_per_sign,tandem_f40a3_phi0_r2_case.m:213,cfg.structures.section4.max_complete_ss_per_sign,Inf,section4_vlsm_analysis,是
+tandem_f40a3_phi0_r2,structures.plot_normalization,tandem_f40a3_phi0_r2_case.m:215,cfg.structures.section4.plot_normalization,'u_over_Uinf',section4_vlsm_analysis,是
+tandem_f40a3_phi0_r2,structures.plot_colormap,tandem_f40a3_phi0_r2_case.m:214,cfg.structures.section4.plot_colormap,固定 balance / 257; 字段 ocean 无效,section4_vlsm_analysis,否
+tandem_f40a3_phi0_r2,phase_preview.profile_source,tandem_f40a3_phi0_r2_case.m:199,固定历史相位链；无可调入口,raw 字段无消费者,无,否
+tandem_f40a3_phi0_r2,transport.stress_fraction_floor,lib/+tblR2/quadrant_streaming.m:18,cfg.transport.stress_fraction_floor,1e-6,quadrant_streaming,是
+tandem_baseline_r2,phase_preview.smooth_points,主脚本 Section3 smooth_pts,cfg.phase_preview.smooth_points,5,plot_section3_preview,是，默认保持原值
+tandem_baseline_r2,structures.section4.reference_x_mm,section4_vlsm_analysis.make_d23_config,cfg.structures.section4.reference_x_mm,[100 220],d23.finalize_context,是，默认保持原值
+tandem_baseline_r2,structures.section4.chunk_frames,section4_vlsm_analysis.make_d23_config,cfg.structures.section4.chunk_frames,48,d23.compute_statistics/run_detection,是，默认保持原值
+tandem_baseline_r2,structures.section4.amplitude_multiplier,section4_vlsm_analysis.make_d23_config,cfg.structures.section4.amplitude_multiplier,1.0,d23.detect_frame,是，默认保持原值
+tandem_baseline_r2,structures.section4.pod.spatial_block_dof,section4_vlsm_analysis.make_d23_config,cfg.structures.section4.pod.spatial_block_dof,512,d23.build_pod_cache,是，默认保持原值
+tandem_baseline_r2,structures.section4.pod.time_tile_frames,section4_vlsm_analysis.make_d23_config,cfg.structures.section4.pod.time_tile_frames,128,d23.build_pod_cache,是，默认保持原值
+tandem_f40a3_phi0_r2,phase_preview.smooth_points,主脚本 Section3 smooth_pts,cfg.phase_preview.smooth_points,5,plot_section3_preview,是，默认保持原值
+tandem_f40a3_phi0_r2,structures.section4.reference_x_mm,section4_vlsm_analysis.make_d23_config,cfg.structures.section4.reference_x_mm,[100 220],d23.finalize_context,是，默认保持原值
+tandem_f40a3_phi0_r2,structures.section4.chunk_frames,section4_vlsm_analysis.make_d23_config,cfg.structures.section4.chunk_frames,48,d23.compute_statistics/run_detection,是，默认保持原值
+tandem_f40a3_phi0_r2,structures.section4.amplitude_multiplier,section4_vlsm_analysis.make_d23_config,cfg.structures.section4.amplitude_multiplier,1.0,d23.detect_frame,是，默认保持原值
+tandem_f40a3_phi0_r2,structures.section4.pod.spatial_block_dof,section4_vlsm_analysis.make_d23_config,cfg.structures.section4.pod.spatial_block_dof,512,d23.build_pod_cache,是，默认保持原值
+tandem_f40a3_phi0_r2,structures.section4.pod.time_tile_frames,section4_vlsm_analysis.make_d23_config,cfg.structures.section4.pod.time_tile_frames,128,d23.build_pod_cache,是，默认保持原值

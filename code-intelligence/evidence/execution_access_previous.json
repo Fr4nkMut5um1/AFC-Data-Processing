@@ -1,0 +1,31 @@
+{
+  "checked_on": "2026-09-10",
+  "evidence_type": "ENVIRONMENT_OBSERVATION",
+  "github": {
+    "authenticated_login": "Angelica-Lin",
+    "accessible_repositories_returned": 0,
+    "installed_repository_search_query": "AFC-Data-Processing",
+    "installed_repository_search_results": 0,
+    "candidate_repository_get": "Angelica-Lin/AFC-Data-Processing",
+    "candidate_repository_get_status": 404,
+    "actual_project_owner": null,
+    "actual_project_visibility": null,
+    "actual_project_head": null,
+    "workflow_dispatched": false,
+    "note": "404 and empty lists do not establish nonexistence or private visibility. Historical owner hints are not verified."
+  },
+  "local_execution": {
+    "matlab_executable_found": false,
+    "matlab_batch_executable_found": false,
+    "mpm_executable_found": false,
+    "docker_executable_found": false,
+    "gh_executable_found": false,
+    "known_matlab_license_environment_configured": false,
+    "license_values_collected": false,
+    "matlab_plugin_search_results": 0,
+    "matlab_started": false
+  },
+  "remaining_requirement": "A reachable licensed MATLAB execution environment; cloud Actions also requires access to the actual repository and a permitted licensing route.",
+  "p1_acceptance": "BLOCKED_NATIVE_NOT_RUN",
+  "historical_observation": true
+}

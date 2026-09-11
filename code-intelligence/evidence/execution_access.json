@@ -1,0 +1,15 @@
+{
+  "checked_on": "2026-09-11",
+  "evidence_type": "ENVIRONMENT_OBSERVATION",
+  "github": {
+    "authenticated_login": "Fr4nkMut5um1",
+    "repository": "Fr4nkMut5um1/AFC-Data-Processing",
+    "visibility": "private",
+    "repository_id": "1364556785",
+    "push_permission": true,
+    "workflow_dispatched": false
+  },
+  "matlab_static": "NOT_RUN",
+  "runtime": "NOT_RUN",
+  "history_archive_import": "BLOCKED_AUTOMATIC_APPROVAL_REVIEW"
+}

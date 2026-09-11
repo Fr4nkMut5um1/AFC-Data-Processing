@@ -1,0 +1,19 @@
+function expected = optional_artifact_contract(selection, spectra)
+%OPTIONAL_ARTIFACT_CONTRACT Expected output counts for sparse valid results.
+selected_count = nnz(selection.Selected);
+has_spectra = ~isempty(spectra.spectra_table);
+if has_spectra
+    energy_rows = numel(spectra.thresholds) * numel(spectra.row_ids);
+else
+    energy_rows = 0;
+end
+summary_count = 4 + 2 * double(has_spectra);
+contact_sheet_count = 5;
+expected = struct( ...
+    'selected_gallery_count', selected_count, ...
+    'energy_row_count', energy_rows, ...
+    'contact_sheet_count', contact_sheet_count, ...
+    'summary_plot_count', summary_count, ...
+    'fig_count', selected_count + contact_sheet_count + summary_count, ...
+    'has_spectra', has_spectra);
+end

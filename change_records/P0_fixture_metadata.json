@@ -1,0 +1,922 @@
+{
+  "fixtures/baseline/postproc.mat": {
+    "variables": {
+      "U": {
+        "matlab_shape": [
+          48,
+          89,
+          640
+        ],
+        "hdf5_dtype": "float32",
+        "matlab_class": "single"
+      },
+      "V": {
+        "matlab_shape": [
+          48,
+          89,
+          640
+        ],
+        "hdf5_dtype": "float32",
+        "matlab_class": "single"
+      },
+      "sampleValid": {
+        "matlab_shape": [
+          48,
+          89,
+          640
+        ],
+        "hdf5_dtype": "uint8",
+        "matlab_class": "logical"
+      },
+      "X": {
+        "matlab_shape": [
+          89,
+          640
+        ],
+        "hdf5_dtype": "float64",
+        "matlab_class": "double"
+      },
+      "Y": {
+        "matlab_shape": [
+          89,
+          640
+        ],
+        "hdf5_dtype": "float64",
+        "matlab_class": "double"
+      },
+      "frame_ids": {
+        "matlab_shape": [
+          48,
+          1
+        ],
+        "hdf5_dtype": "float64",
+        "matlab_class": "double"
+      }
+    },
+    "cache_meta": {
+      "cached_size": [
+        [
+          48.0
+        ],
+        [
+          89.0
+        ],
+        [
+          640.0
+        ]
+      ],
+      "case_id": "per_case/tandem_baseline_r2",
+      "created_utc": "2026-09-10T00:00:00Z",
+      "data_root": "review_fixture",
+      "fixture_note": "Real cached samples, full spatial grid, original ordinals 1:24 and 6001:6024. Renumbered 1:48. Repeat means below are recomputed using the existing Section 1 plain mean convention, NOT inherited full-run means.",
+      "frame_offset": 0.0,
+      "fs": 960.0,
+      "grid_size": [
+        [
+          640.0
+        ],
+        [
+          91.0
+        ]
+      ],
+      "n_frames": 24.0,
+      "original_created_utc": "2026-08-23T10:25:20Z",
+      "original_total_frames": 12000.0,
+      "precision": "single",
+      "repeat_boundaries": 24.0,
+      "repeat_ids": [
+        "Tandem_Baseline_PostProc_3rd",
+        "Tandem_Baseline_PostProc_2nd"
+      ],
+      "repeat_offsets": [
+        [
+          0.0
+        ],
+        [
+          24.0
+        ]
+      ],
+      "repeat_roots": [
+        "repeat_1_sample",
+        "repeat_2_sample"
+      ],
+      "schema_version": 4.0,
+      "source_first_file": "B0001.dat",
+      "source_last_file": "B6000.dat",
+      "source_role": "postproc",
+      "source_root": "review_fixture",
+      "total_frames": 48.0,
+      "wall_side": "top",
+      "y_mapping": {
+        "equation": "y(j) = j * h_y; wall at y = 0, first retained row y = 0 + h_y",
+        "h_y_mm": 0.5152399999999995,
+        "method": "first_retained_row_0_plus_h",
+        "version": 1.0
+      }
+    },
+    "source_frame_ordinals": [
+      [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0,
+        21.0,
+        22.0,
+        23.0,
+        24.0,
+        6001.0,
+        6002.0,
+        6003.0,
+        6004.0,
+        6005.0,
+        6006.0,
+        6007.0,
+        6008.0,
+        6009.0,
+        6010.0,
+        6011.0,
+        6012.0,
+        6013.0,
+        6014.0,
+        6015.0,
+        6016.0,
+        6017.0,
+        6018.0,
+        6019.0,
+        6020.0,
+        6021.0,
+        6022.0,
+        6023.0,
+        6024.0
+      ]
+    ],
+    "frame_ids": [
+      [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0,
+        21.0,
+        22.0,
+        23.0,
+        24.0,
+        25.0,
+        26.0,
+        27.0,
+        28.0,
+        29.0,
+        30.0,
+        31.0,
+        32.0,
+        33.0,
+        34.0,
+        35.0,
+        36.0,
+        37.0,
+        38.0,
+        39.0,
+        40.0,
+        41.0,
+        42.0,
+        43.0,
+        44.0,
+        45.0,
+        46.0,
+        47.0,
+        48.0
+      ]
+    ],
+    "source_grid_size": [
+      [
+        640.0
+      ],
+      [
+        91.0
+      ]
+    ],
+    "j_wall_removed": 2.0,
+    "h_mm": 0.5152447230046949
+  },
+  "fixtures/baseline/raw.mat": {
+    "variables": {
+      "U": {
+        "matlab_shape": [
+          48,
+          89,
+          640
+        ],
+        "hdf5_dtype": "float32",
+        "matlab_class": "single"
+      },
+      "V": {
+        "matlab_shape": [
+          48,
+          89,
+          640
+        ],
+        "hdf5_dtype": "float32",
+        "matlab_class": "single"
+      },
+      "sampleValid": {
+        "matlab_shape": [
+          48,
+          89,
+          640
+        ],
+        "hdf5_dtype": "uint8",
+        "matlab_class": "logical"
+      },
+      "X": {
+        "matlab_shape": [
+          89,
+          640
+        ],
+        "hdf5_dtype": "float64",
+        "matlab_class": "double"
+      },
+      "Y": {
+        "matlab_shape": [
+          89,
+          640
+        ],
+        "hdf5_dtype": "float64",
+        "matlab_class": "double"
+      },
+      "frame_ids": {
+        "matlab_shape": [
+          48,
+          1
+        ],
+        "hdf5_dtype": "float64",
+        "matlab_class": "double"
+      }
+    },
+    "cache_meta": {
+      "cached_size": [
+        [
+          48.0
+        ],
+        [
+          89.0
+        ],
+        [
+          640.0
+        ]
+      ],
+      "case_id": "per_case/tandem_baseline_r2",
+      "created_utc": "2026-09-10T00:00:00Z",
+      "data_root": "review_fixture",
+      "fixture_note": "Real cached samples, full spatial grid, original ordinals 1:24 and 6001:6024. Renumbered 1:48. Repeat means below are recomputed using the existing Section 1 plain mean convention, NOT inherited full-run means.",
+      "frame_offset": 0.0,
+      "fs": 960.0,
+      "grid_size": [
+        [
+          640.0
+        ],
+        [
+          91.0
+        ]
+      ],
+      "n_frames": 24.0,
+      "original_created_utc": "2026-08-23T10:11:45Z",
+      "original_total_frames": 12000.0,
+      "precision": "single",
+      "repeat_boundaries": 24.0,
+      "repeat_ids": [
+        "Tandem_Baseline_PIV_3rd",
+        "Tandem_Baseline_PIV_2nd"
+      ],
+      "repeat_offsets": [
+        [
+          0.0
+        ],
+        [
+          24.0
+        ]
+      ],
+      "repeat_roots": [
+        "repeat_1_sample",
+        "repeat_2_sample"
+      ],
+      "schema_version": 4.0,
+      "source_first_file": "B0001.dat",
+      "source_last_file": "B6000.dat",
+      "source_role": "raw",
+      "source_root": "review_fixture",
+      "total_frames": 48.0,
+      "wall_side": "top",
+      "y_mapping": {
+        "equation": "y(j) = j * h_y; wall at y = 0, first retained row y = 0 + h_y",
+        "h_y_mm": 0.5152399999999995,
+        "method": "first_retained_row_0_plus_h",
+        "version": 1.0
+      }
+    },
+    "source_frame_ordinals": [
+      [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0,
+        21.0,
+        22.0,
+        23.0,
+        24.0,
+        6001.0,
+        6002.0,
+        6003.0,
+        6004.0,
+        6005.0,
+        6006.0,
+        6007.0,
+        6008.0,
+        6009.0,
+        6010.0,
+        6011.0,
+        6012.0,
+        6013.0,
+        6014.0,
+        6015.0,
+        6016.0,
+        6017.0,
+        6018.0,
+        6019.0,
+        6020.0,
+        6021.0,
+        6022.0,
+        6023.0,
+        6024.0
+      ]
+    ],
+    "frame_ids": [
+      [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0,
+        21.0,
+        22.0,
+        23.0,
+        24.0,
+        25.0,
+        26.0,
+        27.0,
+        28.0,
+        29.0,
+        30.0,
+        31.0,
+        32.0,
+        33.0,
+        34.0,
+        35.0,
+        36.0,
+        37.0,
+        38.0,
+        39.0,
+        40.0,
+        41.0,
+        42.0,
+        43.0,
+        44.0,
+        45.0,
+        46.0,
+        47.0,
+        48.0
+      ]
+    ],
+    "source_grid_size": [
+      [
+        640.0
+      ],
+      [
+        91.0
+      ]
+    ],
+    "j_wall_removed": 2.0,
+    "h_mm": 0.5152447230046949
+  },
+  "fixtures/controlled/postproc.mat": {
+    "variables": {
+      "U": {
+        "matlab_shape": [
+          48,
+          89,
+          640
+        ],
+        "hdf5_dtype": "float32",
+        "matlab_class": "single"
+      },
+      "V": {
+        "matlab_shape": [
+          48,
+          89,
+          640
+        ],
+        "hdf5_dtype": "float32",
+        "matlab_class": "single"
+      },
+      "sampleValid": {
+        "matlab_shape": [
+          48,
+          89,
+          640
+        ],
+        "hdf5_dtype": "uint8",
+        "matlab_class": "logical"
+      },
+      "X": {
+        "matlab_shape": [
+          89,
+          640
+        ],
+        "hdf5_dtype": "float64",
+        "matlab_class": "double"
+      },
+      "Y": {
+        "matlab_shape": [
+          89,
+          640
+        ],
+        "hdf5_dtype": "float64",
+        "matlab_class": "double"
+      },
+      "frame_ids": {
+        "matlab_shape": [
+          48,
+          1
+        ],
+        "hdf5_dtype": "float64",
+        "matlab_class": "double"
+      }
+    },
+    "cache_meta": {
+      "cached_size": [
+        [
+          48.0
+        ],
+        [
+          89.0
+        ],
+        [
+          640.0
+        ]
+      ],
+      "case_id": "per_case/tandem_f40a3_phi0_r2",
+      "created_utc": "2026-09-10T00:00:00Z",
+      "data_root": "review_fixture",
+      "fixture_note": "Real cached samples, full spatial grid, original ordinals 1:24 and 6001:6024. Renumbered 1:48. Repeat means below are recomputed using the existing Section 1 plain mean convention, NOT inherited full-run means.",
+      "frame_offset": 0.0,
+      "fs": 960.0,
+      "grid_size": [
+        [
+          640.0
+        ],
+        [
+          91.0
+        ]
+      ],
+      "n_frames": 24.0,
+      "original_created_utc": "2026-08-27T05:18:36Z",
+      "original_total_frames": 12000.0,
+      "precision": "single",
+      "repeat_boundaries": 24.0,
+      "repeat_ids": [
+        "Tandem_f40A3_Phi+0_PostProc_3rd",
+        "Tandem_f40A3_Phi+0_PostProc_2nd"
+      ],
+      "repeat_offsets": [
+        [
+          0.0
+        ],
+        [
+          24.0
+        ]
+      ],
+      "repeat_roots": [
+        "repeat_1_sample",
+        "repeat_2_sample"
+      ],
+      "schema_version": 4.0,
+      "source_first_file": "B0001.dat",
+      "source_last_file": "B6000.dat",
+      "source_role": "postproc",
+      "source_root": "review_fixture",
+      "total_frames": 48.0,
+      "wall_side": "top",
+      "y_mapping": {
+        "equation": "y(j) = j * h_y; wall at y = 0, first retained row y = 0 + h_y",
+        "h_y_mm": 0.5152399999999995,
+        "method": "first_retained_row_0_plus_h",
+        "version": 1.0
+      }
+    },
+    "source_frame_ordinals": [
+      [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0,
+        21.0,
+        22.0,
+        23.0,
+        24.0,
+        6001.0,
+        6002.0,
+        6003.0,
+        6004.0,
+        6005.0,
+        6006.0,
+        6007.0,
+        6008.0,
+        6009.0,
+        6010.0,
+        6011.0,
+        6012.0,
+        6013.0,
+        6014.0,
+        6015.0,
+        6016.0,
+        6017.0,
+        6018.0,
+        6019.0,
+        6020.0,
+        6021.0,
+        6022.0,
+        6023.0,
+        6024.0
+      ]
+    ],
+    "frame_ids": [
+      [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0,
+        21.0,
+        22.0,
+        23.0,
+        24.0,
+        25.0,
+        26.0,
+        27.0,
+        28.0,
+        29.0,
+        30.0,
+        31.0,
+        32.0,
+        33.0,
+        34.0,
+        35.0,
+        36.0,
+        37.0,
+        38.0,
+        39.0,
+        40.0,
+        41.0,
+        42.0,
+        43.0,
+        44.0,
+        45.0,
+        46.0,
+        47.0,
+        48.0
+      ]
+    ],
+    "source_grid_size": [
+      [
+        640.0
+      ],
+      [
+        91.0
+      ]
+    ],
+    "j_wall_removed": 2.0,
+    "h_mm": 0.5152447230046949
+  },
+  "fixtures/controlled/raw.mat": {
+    "variables": {
+      "U": {
+        "matlab_shape": [
+          48,
+          89,
+          640
+        ],
+        "hdf5_dtype": "float32",
+        "matlab_class": "single"
+      },
+      "V": {
+        "matlab_shape": [
+          48,
+          89,
+          640
+        ],
+        "hdf5_dtype": "float32",
+        "matlab_class": "single"
+      },
+      "sampleValid": {
+        "matlab_shape": [
+          48,
+          89,
+          640
+        ],
+        "hdf5_dtype": "uint8",
+        "matlab_class": "logical"
+      },
+      "X": {
+        "matlab_shape": [
+          89,
+          640
+        ],
+        "hdf5_dtype": "float64",
+        "matlab_class": "double"
+      },
+      "Y": {
+        "matlab_shape": [
+          89,
+          640
+        ],
+        "hdf5_dtype": "float64",
+        "matlab_class": "double"
+      },
+      "frame_ids": {
+        "matlab_shape": [
+          48,
+          1
+        ],
+        "hdf5_dtype": "float64",
+        "matlab_class": "double"
+      }
+    },
+    "cache_meta": {
+      "cached_size": [
+        [
+          48.0
+        ],
+        [
+          89.0
+        ],
+        [
+          640.0
+        ]
+      ],
+      "case_id": "per_case/tandem_f40a3_phi0_r2",
+      "created_utc": "2026-09-10T00:00:00Z",
+      "data_root": "review_fixture",
+      "fixture_note": "Real cached samples, full spatial grid, original ordinals 1:24 and 6001:6024. Renumbered 1:48. Repeat means below are recomputed using the existing Section 1 plain mean convention, NOT inherited full-run means.",
+      "frame_offset": 0.0,
+      "fs": 960.0,
+      "grid_size": [
+        [
+          640.0
+        ],
+        [
+          91.0
+        ]
+      ],
+      "n_frames": 24.0,
+      "original_created_utc": "2026-08-27T05:07:33Z",
+      "original_total_frames": 12000.0,
+      "precision": "single",
+      "repeat_boundaries": 24.0,
+      "repeat_ids": [
+        "Tandem_f40A3_Phi+0_PIV_3rd",
+        "Tandem_f40A3_Phi+0_PIV_2nd"
+      ],
+      "repeat_offsets": [
+        [
+          0.0
+        ],
+        [
+          24.0
+        ]
+      ],
+      "repeat_roots": [
+        "repeat_1_sample",
+        "repeat_2_sample"
+      ],
+      "schema_version": 4.0,
+      "source_first_file": "B0001.dat",
+      "source_last_file": "B6000.dat",
+      "source_role": "raw",
+      "source_root": "review_fixture",
+      "total_frames": 48.0,
+      "wall_side": "top",
+      "y_mapping": {
+        "equation": "y(j) = j * h_y; wall at y = 0, first retained row y = 0 + h_y",
+        "h_y_mm": 0.5152399999999995,
+        "method": "first_retained_row_0_plus_h",
+        "version": 1.0
+      }
+    },
+    "source_frame_ordinals": [
+      [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0,
+        21.0,
+        22.0,
+        23.0,
+        24.0,
+        6001.0,
+        6002.0,
+        6003.0,
+        6004.0,
+        6005.0,
+        6006.0,
+        6007.0,
+        6008.0,
+        6009.0,
+        6010.0,
+        6011.0,
+        6012.0,
+        6013.0,
+        6014.0,
+        6015.0,
+        6016.0,
+        6017.0,
+        6018.0,
+        6019.0,
+        6020.0,
+        6021.0,
+        6022.0,
+        6023.0,
+        6024.0
+      ]
+    ],
+    "frame_ids": [
+      [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0,
+        21.0,
+        22.0,
+        23.0,
+        24.0,
+        25.0,
+        26.0,
+        27.0,
+        28.0,
+        29.0,
+        30.0,
+        31.0,
+        32.0,
+        33.0,
+        34.0,
+        35.0,
+        36.0,
+        37.0,
+        38.0,
+        39.0,
+        40.0,
+        41.0,
+        42.0,
+        43.0,
+        44.0,
+        45.0,
+        46.0,
+        47.0,
+        48.0
+      ]
+    ],
+    "source_grid_size": [
+      [
+        640.0
+      ],
+      [
+        91.0
+      ]
+    ],
+    "j_wall_removed": 2.0,
+    "h_mm": 0.5152447230046949
+  }
+}

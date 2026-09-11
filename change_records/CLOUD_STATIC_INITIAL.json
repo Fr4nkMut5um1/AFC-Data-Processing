@@ -1,0 +1,166 @@
+{
+  "status": "FAIL_STATIC",
+  "scope": "File bytes and release text only. No MATLAB, Editor execution or numerical acceptance.",
+  "checked_utc": "2026-09-10T16:16:15.292822+00:00",
+  "project_root": "/workspace/scratch/4aabc38ad7f3/work/project",
+  "protected_original_files_per_case": 170,
+  "original_evidence_files_checked": 469,
+  "checks": [
+    {
+      "check": "tandem_baseline_r2: unchanged original files/resources",
+      "status": "PASS_STATIC",
+      "detail": {
+        "files": 170,
+        "differences": []
+      }
+    },
+    {
+      "check": "tandem_baseline_r2: section title text only (NOT Editor Run Section)",
+      "status": "PASS_STATIC",
+      "detail": ""
+    },
+    {
+      "check": "tandem_baseline_r2: no listed heavy calls in Section 0 text",
+      "status": "PASS_STATIC",
+      "detail": []
+    },
+    {
+      "check": "tandem_baseline_r2: no listed legacy daily entry references",
+      "status": "PASS_STATIC",
+      "detail": []
+    },
+    {
+      "check": "tandem_baseline_r2: release parameter declarations (not executed cfg)",
+      "status": "FAIL",
+      "detail": {
+        "cfg.phase.n_bins": {
+          "release": "24",
+          "actual": "[]"
+        },
+        "cfg.phase.minimum_samples_per_bin": {
+          "release": "20",
+          "actual": "[]"
+        }
+      }
+    },
+    {
+      "check": "tandem_baseline_r2: one rebuild_cache derivation",
+      "status": "PASS_STATIC",
+      "detail": ""
+    },
+    {
+      "check": "tandem_baseline_r2: raw explicit repeat order",
+      "status": "PASS_STATIC",
+      "detail": "{'Tandem_Baseline_PIV_3rd','Tandem_Baseline_PIV_2nd'}"
+    },
+    {
+      "check": "tandem_baseline_r2: postproc explicit repeat order",
+      "status": "PASS_STATIC",
+      "detail": "{'Tandem_Baseline_PostProc_3rd','Tandem_Baseline_PostProc_2nd'}"
+    },
+    {
+      "check": "tandem_baseline_r2: formal S4 gate text remains",
+      "status": "PASS_STATIC",
+      "detail": ""
+    },
+    {
+      "check": "tandem_f40a3_phi0_r2: unchanged original files/resources",
+      "status": "PASS_STATIC",
+      "detail": {
+        "files": 170,
+        "differences": []
+      }
+    },
+    {
+      "check": "tandem_f40a3_phi0_r2: section title text only (NOT Editor Run Section)",
+      "status": "PASS_STATIC",
+      "detail": ""
+    },
+    {
+      "check": "tandem_f40a3_phi0_r2: no listed heavy calls in Section 0 text",
+      "status": "PASS_STATIC",
+      "detail": []
+    },
+    {
+      "check": "tandem_f40a3_phi0_r2: no listed legacy daily entry references",
+      "status": "PASS_STATIC",
+      "detail": []
+    },
+    {
+      "check": "tandem_f40a3_phi0_r2: release parameter declarations (not executed cfg)",
+      "status": "PASS_STATIC",
+      "detail": {}
+    },
+    {
+      "check": "tandem_f40a3_phi0_r2: one rebuild_cache derivation",
+      "status": "PASS_STATIC",
+      "detail": ""
+    },
+    {
+      "check": "tandem_f40a3_phi0_r2: raw explicit repeat order",
+      "status": "PASS_STATIC",
+      "detail": "{'Tandem_f40A3_Phi+0_PIV_3rd','Tandem_f40A3_Phi+0_PIV_2nd'}"
+    },
+    {
+      "check": "tandem_f40a3_phi0_r2: postproc explicit repeat order",
+      "status": "PASS_STATIC",
+      "detail": "{'Tandem_f40A3_Phi+0_PostProc_3rd','Tandem_f40A3_Phi+0_PostProc_2nd'}"
+    },
+    {
+      "check": "tandem_f40a3_phi0_r2: formal S4 gate text remains",
+      "status": "PASS_STATIC",
+      "detail": ""
+    },
+    {
+      "check": "lib: both case copies identical",
+      "status": "PASS_STATIC",
+      "detail": {
+        "files_each": 183,
+        "different_file_sets": [],
+        "different_bytes": []
+      }
+    },
+    {
+      "check": "lib: local copies agree with corresponding maintenance files",
+      "status": "PASS_STATIC",
+      "detail": []
+    },
+    {
+      "check": "third_party: both case copies identical",
+      "status": "PASS_STATIC",
+      "detail": {
+        "files_each": 6,
+        "different_file_sets": [],
+        "different_bytes": []
+      }
+    },
+    {
+      "check": "third_party: local copies agree with corresponding maintenance files",
+      "status": "PASS_STATIC",
+      "detail": []
+    },
+    {
+      "check": "original extracted bundle including smoke_expected",
+      "status": "PASS_STATIC",
+      "detail": {
+        "files": 468,
+        "differences": []
+      }
+    },
+    {
+      "check": "original smoke comparison body/tolerances preserved as text",
+      "status": "PASS_STATIC",
+      "detail": ""
+    },
+    {
+      "check": "original ZIP SHA-256",
+      "status": "PASS_STATIC",
+      "detail": ""
+    }
+  ],
+  "matlab_dynamic_acceptance": "NOT_EXECUTED",
+  "formal_data_acceptance": "NOT_EXECUTED",
+  "failures": [
+    "tandem_baseline_r2: release parameter declarations (not executed cfg)"
+  ]
+}

@@ -1,0 +1,39 @@
+function source = load_utau(filename, expected_case, expected_total_frames, expected_grid)
+%LOAD_UTAU Load the current r2 friction result and enforce provenance checks.
+if ~isfile(filename)
+    error('d23:load_utau:MissingFile', 'Missing u_tau result: %s', filename);
+end
+loaded = load(filename, 'data', 'meta');
+if ~isfield(loaded, 'data') || ~isfield(loaded, 'meta') || ...
+        ~isfield(loaded.data, 'normalization') || ...
+        ~isfield(loaded.data.normalization, 'u_tau') || ...
+        ~isfield(loaded.data, 'wall_distance_mm')
+    error('d23:load_utau:InvalidContract', ...
+        'The r2 result lacks meta, normalization.u_tau, or wall_distance_mm.');
+end
+meta = loaded.meta;
+if ~isfield(meta, 'case_id') || ~strcmp(meta.case_id, expected_case) || ...
+        ~isfield(meta, 'total_frames') || meta.total_frames ~= expected_total_frames
+    error('d23:load_utau:ContractMismatch', ...
+        'The r2 case identity or 12,000-frame contract does not match.');
+end
+if ~isequal(size(loaded.data.wall_distance_mm), expected_grid)
+    error('d23:load_utau:GridMismatch', ...
+        'wall_distance_mm is %s, expected %s.', ...
+        mat2str(size(loaded.data.wall_distance_mm)), mat2str(expected_grid));
+end
+u_tau = double(loaded.data.normalization.u_tau);
+if ~isscalar(u_tau) || ~isfinite(u_tau) || u_tau <= 0
+    error('d23:load_utau:InvalidValue', 'u_tau must be finite and positive.');
+end
+info = dir(filename);
+source = struct('u_tau_m_s', u_tau, ...
+    'wall_distance_mm', double(loaded.data.wall_distance_mm), ...
+    'meta', meta, 'path', filename, 'bytes', info.bytes, ...
+    'datenum', info.datenum, 'loaded_utc', utc_now());
+end
+
+function value = utc_now()
+value = char(datetime('now', 'TimeZone', 'UTC', ...
+    'Format', 'yyyy-MM-dd''T''HH:mm:ss.SSS''Z'''));
+end

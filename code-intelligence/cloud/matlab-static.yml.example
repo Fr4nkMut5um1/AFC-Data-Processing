@@ -1,0 +1,47 @@
+# INACTIVE P1 proof-of-concept: not installed in .github/workflows.
+# Repository root must contain cases/ and code-intelligence/ from this package.
+# Resolve repository access/licensing first. No scientific pipeline runs here.
+name: PIV static evidence (manual only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        case: [tandem_baseline_r2, tandem_f40a3_phi0_r2]
+    env:
+      MLM_LICENSE_TOKEN: ${{ secrets.MLM_LICENSE_TOKEN }}
+      PIV_CASE: ${{ matrix.case }}
+      REPOSITORY_PRIVATE: ${{ github.event.repository.private }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Check private repository licensing prerequisite
+        shell: bash
+        run: |
+          if [ "$REPOSITORY_PRIVATE" = "true" ] && [ -z "$MLM_LICENSE_TOKEN" ]; then
+            echo "Private repository requires an existing valid batch token or another authorized execution route."
+            exit 1
+          fi
+      - uses: matlab-actions/setup-matlab@v3
+        with:
+          release: R2022bU1
+          products: Curve_Fitting_Toolbox Image_Processing_Toolbox Signal_Processing_Toolbox
+          cache: false
+      - uses: matlab-actions/run-command@v3
+        with:
+          command: addpath(fullfile(pwd,'code-intelligence','scripts')); collect_static_evidence(fullfile(pwd,'cases','per_case',getenv('PIV_CASE')),fullfile(pwd,'code-intelligence','evidence','native'));
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: static-${{ matrix.case }}-${{ github.sha }}-${{ github.run_attempt }}
+          path: code-intelligence/evidence/native/
+          if-no-files-found: error
+          retention-days: 14

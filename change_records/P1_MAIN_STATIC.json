@@ -1,0 +1,32 @@
+{
+  "scope": "Static source comparison only; no MATLAB execution",
+  "matlab_found": false,
+  "checks": [
+    {
+      "script": "work/project/cases/per_case/tandem_baseline_r2/tandem_baseline_r2_case.m",
+      "static_checks": [
+        "S2 statistics branch exact text preserved",
+        "S2 mean_bl branch exact text preserved",
+        "S3 phase branch exact text preserved",
+        "S3 actual drawing including controlled PostProc condition preserved; only input guards added",
+        "Current cfg assignment lines before runtime setup unchanged",
+        "Text has Section headings 0–9 exactly once; NOT an Editor Run Section execution test",
+        "Section 0 contains no velocity load, DAT source probe, statistic/plot call or clearvars"
+      ]
+    },
+    {
+      "script": "work/project/cases/per_case/tandem_f40a3_phi0_r2/tandem_f40a3_phi0_r2_case.m",
+      "static_checks": [
+        "S2 statistics branch exact text preserved",
+        "S2 mean_bl branch exact text preserved",
+        "S3 phase branch exact text preserved",
+        "S3 actual drawing including controlled PostProc condition preserved; only input guards added",
+        "Current cfg assignment lines before runtime setup unchanged",
+        "Text has Section headings 0–9 exactly once; NOT an Editor Run Section execution test",
+        "Section 0 contains no velocity load, DAT source probe, statistic/plot call or clearvars"
+      ]
+    }
+  ],
+  "matlab_tests": "NOT RUN",
+  "editor_run_section": "NOT RUN"
+}

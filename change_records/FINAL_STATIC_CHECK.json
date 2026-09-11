@@ -1,0 +1,118 @@
+{
+  "kind": "STATIC ONLY; no MATLAB execution or numerical recomputation",
+  "cases": {
+    "tandem_baseline_r2": {
+      "section_markers": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "run_section_executed": false,
+      "original_parameter_assignments_unchanged": 260,
+      "actual_stage_expressions": {
+        "cfg.stages.cache": "'reuse'",
+        "cfg.stages.statistics": "'reuse'",
+        "cfg.stages.mean_bl": "'reuse'",
+        "cfg.stages.phase": "'skip'",
+        "cfg.stages.structures": "'compute'",
+        "cfg.stages.transport": "'skip'",
+        "cfg.stages.temporal": "'skip'",
+        "cfg.stages.spatial": "'skip'",
+        "cfg.stages.pod": "'skip'",
+        "cfg.stages.dmd": "'skip'",
+        "cfg.stages.lcs": "'skip'",
+        "cfg.stages.spod": "'skip'",
+        "cfg.stages.correlations": "'skip'",
+        "cfg.stages.harmonics": "'skip'",
+        "cfg.stages.figures": "'skip'"
+      },
+      "library_original_files_byte_identical": 166,
+      "library_modified": [
+        "lib/+tblR2/prepare_sequence_cache.m",
+        "lib/+tblR2/ensure_external_toolboxes.m",
+        "lib/+tblR2/section5_run.m",
+        "lib/+tblR2/spod_toolbox_adapter.m",
+        "lib/+tblR2/validate_config.m",
+        "lib/+tblR2/section4_vlsm_analysis.m",
+        "lib/+tblR2/dmd_module.m"
+      ],
+      "library_new": [
+        "lib/+tblR2/workspace_results.m",
+        "lib/+tblR2/require_case_library.m",
+        "lib/+tblR2/validate_sequence_cache.m"
+      ],
+      "all_d23_byte_identical": true,
+      "third_party_and_Cf_chart_byte_identical": true,
+      "raw_ids": "'Tandem_Baseline_PIV_3rd', 'Tandem_Baseline_PIV_2nd'",
+      "postproc_ids": "'Tandem_Baseline_PostProc_3rd', 'Tandem_Baseline_PostProc_2nd'",
+      "root_bootstrap_and_source_scan_removed": true
+    },
+    "tandem_f40a3_phi0_r2": {
+      "section_markers": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "run_section_executed": false,
+      "original_parameter_assignments_unchanged": 260,
+      "actual_stage_expressions": {
+        "cfg.stages.cache": "'reuse'",
+        "cfg.stages.statistics": "'reuse'",
+        "cfg.stages.mean_bl": "'reuse'",
+        "cfg.stages.phase": "'reuse'",
+        "cfg.stages.structures": "'compute'",
+        "cfg.stages.transport": "'skip'",
+        "cfg.stages.temporal": "'skip'",
+        "cfg.stages.spatial": "'skip'",
+        "cfg.stages.pod": "'skip'",
+        "cfg.stages.dmd": "'skip'",
+        "cfg.stages.lcs": "'skip'",
+        "cfg.stages.spod": "'skip'",
+        "cfg.stages.correlations": "'skip'",
+        "cfg.stages.harmonics": "'skip'",
+        "cfg.stages.figures": "'compute'"
+      },
+      "library_original_files_byte_identical": 166,
+      "library_modified": [
+        "lib/+tblR2/prepare_sequence_cache.m",
+        "lib/+tblR2/ensure_external_toolboxes.m",
+        "lib/+tblR2/section5_run.m",
+        "lib/+tblR2/spod_toolbox_adapter.m",
+        "lib/+tblR2/validate_config.m",
+        "lib/+tblR2/section4_vlsm_analysis.m",
+        "lib/+tblR2/dmd_module.m"
+      ],
+      "library_new": [
+        "lib/+tblR2/workspace_results.m",
+        "lib/+tblR2/require_case_library.m",
+        "lib/+tblR2/validate_sequence_cache.m"
+      ],
+      "all_d23_byte_identical": true,
+      "third_party_and_Cf_chart_byte_identical": true,
+      "raw_ids": "'Tandem_f40A3_Phi+0_PIV_3rd', 'Tandem_f40A3_Phi+0_PIV_2nd'",
+      "postproc_ids": "'Tandem_f40A3_Phi+0_PostProc_3rd', 'Tandem_f40A3_Phi+0_PostProc_2nd'",
+      "root_bootstrap_and_source_scan_removed": true
+    }
+  },
+  "smoke_layout_adapter": {
+    "numerical_body_byte_identical_text": true,
+    "comparison_and_tolerances_identical": true,
+    "record_mode_removed": true,
+    "executed": false
+  },
+  "evidence_files_rehashed_unchanged": 469
+}

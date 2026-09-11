@@ -1,0 +1,47 @@
+{
+  "matlab_executed": false,
+  "protected_matlab_core_bytes": {
+    "transport_statistics.m": {
+      "same_bytes": true,
+      "sha256": "a9a76a49e1f8d2c95d54971a693d7c323014b133d4a778efb261218bbb645b85"
+    },
+    "transport_analysis.m": {
+      "same_bytes": true,
+      "sha256": "f56d2d1076ddad3ee87ca3f791b71aae842bfccf89c9a4008edcde84573cf6fd"
+    },
+    "quadrant_streaming.m": {
+      "same_bytes": true,
+      "sha256": "1a00d38e372e0e8dd4547f49d9afe6edceff5b12f88ded948329ec84ee1f16f7"
+    },
+    "read_cache_chunk.m": {
+      "same_bytes": true,
+      "sha256": "1607579b96c3a9afc18ed20f99127cc50ad24447cdf1d72493d58918134357f1"
+    },
+    "read_cache_frames.m": {
+      "same_bytes": true,
+      "sha256": "8ad53b732b05d501053a69f5abab7258b3e16c91bc7ac79c178f1f6b98b2f6b8"
+    },
+    "assign_phase.m": {
+      "same_bytes": true,
+      "sha256": "5db7a2f873d96fd24d02b0a22b1fee7fb6042e04e23d64864e24c87bf344f53e"
+    },
+    "gradient_y_sensitivity.m": {
+      "same_bytes": true,
+      "sha256": "424d5bfdfbf395d795a4a35df47e9d8bb2b51883e8c70564f680f8fa92ae3be1"
+    },
+    "buffer_valid_mask.m": {
+      "same_bytes": true,
+      "sha256": "b129d56dcbd4d300ec36f10f3ab0445d01b14bbb048815e9d1ef48c2376e713d"
+    },
+    "mean_stats_cache.m": {
+      "same_bytes": true,
+      "sha256": "6765b748f1d19db7f88848ac7b28f5741a15a7c50cadcd33beb4a7d4d6818b02"
+    },
+    "phase_stats_cache.m": {
+      "same_bytes": true,
+      "sha256": "ee8d5e17b225492a4eec406b2e531fa27d5fb0c10fe62537e52d49e47dbce078"
+    }
+  },
+  "prepare_build_body_unchanged_except_validator_calls": true,
+  "existing_s5_test_lines_preserved_except_selected_wrapper_fixture_paths": true
+}

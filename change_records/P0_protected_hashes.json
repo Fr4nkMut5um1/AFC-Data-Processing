@@ -1,0 +1,38 @@
+[
+  {
+    "file": "upload/PIV_Review_20260910.zip",
+    "bytes": 150638591,
+    "mode": "0o644",
+    "sha256": "af95e05849b9f09116354fddaa19a660659207c354e3f3ef30ad7f763dfba1f9"
+  },
+  {
+    "file": "evidence/PIV_Review_20260910.zip",
+    "bytes": 150638591,
+    "mode": "0o444",
+    "sha256": "af95e05849b9f09116354fddaa19a660659207c354e3f3ef30ad7f763dfba1f9"
+  },
+  {
+    "file": "evidence/PIV_Review_20260910/project/cases/per_case/tandem_baseline_r2/tandem_baseline_r2_case.m",
+    "bytes": 77396,
+    "mode": "0o444",
+    "sha256": "f170dc25ddffb13ff1c42cbc7e4be8cd5d89e40a622266c2b21d94fad48fe04f"
+  },
+  {
+    "file": "evidence/PIV_Review_20260910/project/cases/per_case/tandem_f40a3_phi0_r2/tandem_f40a3_phi0_r2_case.m",
+    "bytes": 77951,
+    "mode": "0o444",
+    "sha256": "b9ce0fcca105778967c04ee4866550a79235d64c9552732de758c37b3a5e8c7c"
+  },
+  {
+    "file": "evidence/PIV_Review_20260910/fixtures/baseline/smoke_expected.mat",
+    "bytes": 13944893,
+    "mode": "0o444",
+    "sha256": "b4ed1e046db1c0bb7052fe13d5c7e9ed0ca7ada1d2b2d021b9d30f2a1a062e1c"
+  },
+  {
+    "file": "evidence/PIV_Review_20260910/fixtures/controlled/smoke_expected.mat",
+    "bytes": 21834771,
+    "mode": "0o444",
+    "sha256": "a3215724114a9e27b4c36aca5a01daf2536c34b7a0ee2cab30b6b57c9206af49"
+  }
+]

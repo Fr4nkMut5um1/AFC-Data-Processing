@@ -1,0 +1,48 @@
+{
+  "created_local": "20260901_002349_216",
+  "read_only": true,
+  "description": "Saved POD-E50 fields reclassified with streamwise edge buffer enabled/disabled; canonical results were not overwritten.",
+  "buffer_cells": 3,
+  "cases": [
+    {
+      "name": "baseline",
+      "output_root": "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216",
+      "rows": 12,
+      "png_count": 12,
+      "fig_count": 12
+    },
+    {
+      "name": "f40a3",
+      "output_root": "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216",
+      "rows": 12,
+      "png_count": 12,
+      "fig_count": 12
+    }
+  ],
+  "figure_files": [
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007090_conn_8_sign_+1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007090_conn_8_sign_-1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007090_conn_4_sign_+1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007090_conn_4_sign_-1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007091_conn_8_sign_+1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007091_conn_8_sign_-1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007091_conn_4_sign_+1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007091_conn_4_sign_-1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007086_conn_8_sign_+1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007086_conn_8_sign_-1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007086_conn_4_sign_+1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_baseline_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007086_conn_4_sign_-1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007748_conn_8_sign_+1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007748_conn_8_sign_-1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007748_conn_4_sign_+1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_007748_conn_4_sign_-1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_008622_conn_8_sign_+1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_008622_conn_8_sign_-1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_008622_conn_4_sign_+1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_008622_conn_4_sign_-1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_005497_conn_8_sign_+1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_005497_conn_8_sign_-1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_005497_conn_4_sign_+1.png",
+    "D:\\Users\\Frank_7840HSw\\Desktop\\202605实验快反计算\\Current_Plate_Calculation\\cases\\per_case\\tandem_f40a3_phi0_r2\\output\\section4_vlsm\\edge_exclusion_regression\\20260901_002349_216\\frame_005497_conn_4_sign_-1.png"
+  ]
+}

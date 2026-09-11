@@ -1,0 +1,27 @@
+output/
+*.mat
+*.dat
+*.log
+Export/
+tmp/
+downloads/
+error_log.txt
+.DS_Store
+Thumbs.db
+.mcp.json
+archive/zotero_literature/zotero_downloads_平板AFC/
+archive/legacy_pipeline_20260715/HistoryOut_output/
+
+# MATLAB 编辑器自动备份
+*.asv
+# Agent / 工具本地状态（非项目内容）
+.dsh-research/
+.firecrawl/
+.reasonix/
+reasonix.toml
+__pycache__/
+.ai4scholar_tmp/
+.codex-literature-cache/
+
+# 大体积二进制交付物（不进版本控制，保留本地）
+AFC课题讨论V9-林正-20260718.pptx

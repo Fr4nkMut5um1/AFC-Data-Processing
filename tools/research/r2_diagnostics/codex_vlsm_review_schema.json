@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["model", "frames"],
+  "properties": {
+    "model": {"type": "string", "const": "gpt-5.6-sol"},
+    "frames": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["frame_id", "objects", "overall_confidence", "notes"],
+        "properties": {
+          "frame_id": {"type": "integer"},
+          "objects": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sign",
+                "x_min_mm_est",
+                "x_max_mm_est",
+                "y_min_mm_est",
+                "y_max_mm_est",
+                "length_x_mm_est",
+                "touches_fov_edge",
+                "confidence",
+                "notes"
+              ],
+              "properties": {
+                "sign": {"type": "string", "enum": ["positive", "negative"]},
+                "x_min_mm_est": {"type": "number"},
+                "x_max_mm_est": {"type": "number"},
+                "y_min_mm_est": {"type": "number"},
+                "y_max_mm_est": {"type": "number"},
+                "length_x_mm_est": {"type": "number"},
+                "touches_fov_edge": {"type": "boolean"},
+                "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+                "notes": {"type": "string"}
+              }
+            }
+          },
+          "overall_confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "notes": {"type": "string"}
+        }
+      }
+    }
+  }
+}
