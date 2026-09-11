@@ -1,6 +1,13 @@
 name: MATLAB R2022b Cloud Smoke Test
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'cases/**'
+      - 'lib/**'
+      - 'code-intelligence/**'
+      - '.github/workflows/**'
   workflow_dispatch:
 
 permissions:
