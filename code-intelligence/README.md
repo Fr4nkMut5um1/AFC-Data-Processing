@@ -31,3 +31,12 @@
 - DOCUMENTED：仅文档陈述
 
 当前没有 P2 runtime evidence。两个 case 的 input/ 只有 README，不能据此声称完整 PIV pipeline 已在云端运行。
+
+
+## Current update (P2-P6)
+
+P2 bounded runtime smoke passed in run 34688222305 under GitHub-hosted ubuntu-22.04 with MATLAB R2022b Update 10. The synthetic cache statistics, phase statistics, and structure recognition tests all passed; this is labeled RUNTIME_SMOKE and is not representative experimental-data acceptance.
+
+P2 representative runtime is blocked because both case input directories contain only README files. The Linux runner also exposed a source portability limitation in tblR2.io.load_tecplot_dat (memory is unsupported), and the optional temporal spectra path requires the unavailable Signal Processing Toolbox.
+
+P3 evidence schema: evidence/EVIDENCE_SCHEMA.md. P4 Archify: archify/ handoff prepared, renderer unavailable. P5 Cognition DeepWiki: connector unavailable. P6: main path changes automatically trigger the three MATLAB workflows; evidence remains in Actions artifacts and is not committed as source.
