@@ -12,11 +12,11 @@ if ~isfolder(output_dir), mkdir(output_dir); end
 % Keep test selection explicit and reviewable. Each test creates its own
 % temporary synthetic data and does not touch a case input or output folder.
 test_files = { ...
-    fullfile(repo_root, 'tests', 'test_r2_cache_statistics_smoke.m'), ...
+    fullfile(repo_root, 'tests', 'test_r2_cache_statistics_core_smoke.m'), ...
     fullfile(repo_root, 'tests', 'test_r2_phase_smoke.m'), ...
-    fullfile(repo_root, 'tests', 'test_r2_compact_analysis_smoke.m')};
-test_names = {'test_r2_cache_statistics_smoke', ...
-    'test_r2_phase_smoke', 'test_r2_compact_analysis_smoke'};
+    fullfile(repo_root, 'tests', 'test_r2_structure_core_smoke.m')};
+test_names = {'test_r2_cache_statistics_core_smoke', ...
+    'test_r2_phase_smoke', 'test_r2_structure_core_smoke'};
 for k = 1:numel(test_files)
     if ~isfile(test_files{k})
         error('PIVCI:MissingRuntimeSmokeTest', 'Missing test: %s', test_files{k});
@@ -94,13 +94,22 @@ meta.finished_utc = utc_now();
 meta.status = ternary(all_pass, 'COMPLETE_WITH_LIMITATIONS', 'FAILED_OR_PARTIAL');
 meta.passed_count = sum(strcmp({results.status}, 'PASS'));
 meta.failed_count = sum(strcmp({results.status}, 'FAIL'));
-write_json(fullfile(output_dir, 'runtime_calls.json'), struct( ...
-    'status', meta.status, 'evidence', 'RUNTIME_SMOKE', 'tests', results, ...
-    'note', 'Profile and loaded-file records are session observations for these synthetic tests; they are not a complete call graph.'));
-write_json(fullfile(output_dir, 'loaded_files.json'), struct( ...
-    'status', meta.status, 'evidence', 'RUNTIME_SMOKE', ...
-    'tests', arrayfun(@(x) struct('test_name', x.test_name, 'loaded_repo_files', {x.loaded_repo_files}, ...
-        'loaded_mex_files', {x.loaded_mex_files}), results)));
+runtime_payload = struct();
+ runtime_payload.status = meta.status;
+ runtime_payload.evidence = 'RUNTIME_SMOKE';
+ runtime_payload.tests = results;
+ runtime_payload.note = 'Profile and loaded-file records are session observations for these synthetic tests; they are not a complete call graph.';
+write_json(fullfile(output_dir, 'runtime_calls.json'), runtime_payload);
+loaded_payload = struct();
+loaded_payload.status = meta.status;
+loaded_payload.evidence = 'RUNTIME_SMOKE';
+loaded_payload.tests = repmat(struct('test_name', '', 'loaded_repo_files', {{}}, 'loaded_mex_files', {{}}), 1, numel(results));
+for k = 1:numel(results)
+    loaded_payload.tests(k).test_name = results(k).test_name;
+    loaded_payload.tests(k).loaded_repo_files = results(k).loaded_repo_files;
+    loaded_payload.tests(k).loaded_mex_files = results(k).loaded_mex_files;
+end
+write_json(fullfile(output_dir, 'loaded_files.json'), loaded_payload);
 write_json(fullfile(output_dir, 'execution_summary.json'), meta);
 if ~all_pass
     error('PIVCI:RuntimeSmokeFailed', 'One or more runtime smoke tests failed. Inspect %s.', output_dir);
