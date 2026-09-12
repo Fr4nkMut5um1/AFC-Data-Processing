@@ -6,10 +6,8 @@ addpath(fullfile(repo_root, 'lib'), '-begin');
 root = tempname; mkdir(root); cleanup = onCleanup(@() rmdir(root, 's')); %#ok<NASGU>
 I = 6; J = 5; n_frames = 10;
 [xx, yy] = meshgrid(1:I, 1:J);
-U = single(4 + 0.2 * xx + reshape(0:n_frames-1, [], 1, 1));
-U = repmat(U, 1, J, I);
-V = single(0.1 * yy + reshape(sin((1:n_frames) / 2), [], 1, 1));
-V = repmat(V, 1, J, I);
+U = single(reshape(4 + 0.2 * xx, 1, J, I) + reshape(0:n_frames-1, n_frames, 1, 1));
+V = single(reshape(0.1 * yy, 1, J, I) + reshape(sin((1:n_frames) / 2), n_frames, 1, 1));
 sampleValid = true(n_frames, J, I);
 sampleValid(3, 2, 4) = false;
 U(3, 2, 4) = NaN; V(3, 2, 4) = NaN;
