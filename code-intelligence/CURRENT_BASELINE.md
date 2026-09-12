@@ -38,3 +38,13 @@ P1 状态：NATIVE_STATIC_COMPLETE_WITH_LIMITATIONS。
 P2 runtime、P3 schema normalization、P4 Archify、P5 Cognition DeepWiki 和 P6 完整闭环尚未实施。仓库没有代表性 PIV 输入数据，不能把完整 runtime 验证写成已完成。
 
 当前状态详见 [P0_P1_FINAL_STATUS.md](P0_P1_FINAL_STATUS.md)。
+
+
+## Current update (P2-P6)
+
+- P2 bounded runtime smoke is COMPLETE_WITH_LIMITATIONS. Run 34688222305 passed the cache statistics core, phase statistics, and structure recognition synthetic tests under GitHub-hosted ubuntu-22.04 with MATLAB R2022b Update 10. Evidence and profile records are in the matlab-r2022b-runtime-smoke artifact.
+- P2 representative runtime remains BLOCKED: both case input directories contain only README files. A negative probe also recorded that tblR2.io.load_tecplot_dat calls memory, which is unsupported on the Linux runner; temporal_spectra_cache requires pwelch from the unavailable Signal Processing Toolbox.
+- P3 evidence schema is documented in evidence/EVIDENCE_SCHEMA.md.
+- P4 Archify handoff facts are prepared in archify/, but this environment has no Archify renderer or connector; status is BLOCKED_EXTERNAL_RENDERER.
+- P5 DeepWiki integration is BLOCKED_NO_DEEPWIKI_CONNECTOR; no index or runtime claim is fabricated.
+- P6 is partial: main path changes automatically trigger cloud smoke, static, and runtime smoke workflows; dynamic evidence stays in Actions artifacts and is not automatically committed as source.
