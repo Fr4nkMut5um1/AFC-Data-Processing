@@ -18,8 +18,8 @@
   "repository": "Fr4nkMut5um1/AFC-Data-Processing",
   "repository_visibility": "public",
   "last_static_run_id": 34553088328,
-  "last_runtime_smoke_run_id": 34688222305,
-  "last_runtime_smoke_artifact_id": 10295824654,
+  "last_runtime_smoke_run_id": 34688550825,
+  "last_runtime_smoke_artifact_id": 10296236868,
   "matlab_release": "R2022b Update 10",
   "runner": "ubuntu-22.04",
   "runtime_smoke_tests": {
@@ -51,5 +51,6 @@
         "MATLAB"
       ]
     }
-  }
+  },
+  "latest_verified_head": "92a6045222c852cfe4ca449ef1e6b1e0b1d1c532"
 }
